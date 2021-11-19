@@ -44,6 +44,5 @@ func main() {
 	server.GET("/dev", DevRedirect)
 	server.GET("/leetcode", LeetcodeRedirect)
 
-
-	server.Run(":8080")
+	server.Run()
 }

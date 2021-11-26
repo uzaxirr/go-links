@@ -9,7 +9,7 @@ func RootRedirect(c *gin.Context) {
 }
 
 func ResumeRedirect(c *gin.Context) {
-	c.Redirect(302, "https://drive.google.com/file/d/1Mn-VQqJFYNq6SCjtJgl04JBbE84GGHEv/view?usp=sharing")
+	c.Redirect(302, "https://drive.google.com/file/d/1zYg0T3f8lLLpgewshXUvxU1Ei-KbqhWZ/view?usp=sharing")
 }
 
 func GithubRedirect(c *gin.Context) {

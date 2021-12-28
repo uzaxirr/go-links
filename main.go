@@ -37,6 +37,7 @@ func main() {
 
 	server.GET("/", RootRedirect)
 	server.GET("/resume", ResumeRedirect)
+	server.GET("/cv", ResumeRedirect)
 	server.GET("/github", GithubRedirect)
 	server.GET("/lkdn", LinkedinRedirect)
 	server.GET("/linkedin", LinkedinRedirect)

@@ -44,6 +44,7 @@ func main() {
 	server.GET("/lkdn", LinkedinRedirect)
 	server.GET("/linkedin", LinkedinRedirect)
 	server.GET("/twitter", TwitterRedirct)
+	server.GET("/Twitter", TwitterRedirct)
 	server.GET("/dev", DevRedirect)
 	server.GET("/dev.to", DevRedirect)
 	server.GET("/leetcode", LeetcodeRedirect)

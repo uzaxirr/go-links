@@ -8,6 +8,10 @@ func RootRedirect(c *gin.Context) {
 	c.Redirect(302, "https://uzair.biz/")
 }
 
+func InstaRedirect(c *gin.Context) {
+	c.Redirect(302, "https://www.instagram.com/uzaxirr/")
+}
+
 func ResumeRedirect(c *gin.Context) {
 	c.Redirect(302, "https://drive.google.com/file/d/1sasOj2nxrrHZ1xad0EztJ8SzZQRGiYSP/view?usp=sharing")
 }
@@ -36,6 +40,7 @@ func main() {
 	server := gin.Default()
 
 	server.GET("/", RootRedirect)
+	server.GET("/instagram", InstaRedirect)
 	server.GET("/resume", ResumeRedirect)
 	server.GET("/cv", ResumeRedirect)
 	server.GET("/github", GithubRedirect)
